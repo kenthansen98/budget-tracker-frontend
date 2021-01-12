@@ -18,8 +18,8 @@ const AppBar = () => {
     return (
         <View style={styles.container}>
             <AppBarTab title="My Budget" route="/mybudget" />
-            <AppBarTab title="Add" route="/" />
-            <AppBarTab title="Stats" route="/stats" />
+            <AppBarTab title="Home" route="/" />
+            <AppBarTab title="Add Month" route="/add" />
         </View>
     );
 };

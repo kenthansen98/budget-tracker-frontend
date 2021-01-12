@@ -6,7 +6,7 @@ import { Route, Switch, Redirect } from 'react-router-native';
 import Home from './Home';
 import AppBar from './AppBar';
 import Budget from './Budget';
-import Stats from './Stats';
+import AddMonth from './AddMonth';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,8 +27,8 @@ const Main = () => {
         <Route path="/mybudget" exact>
           <Budget />
         </Route>
-        <Route path="/stats" exact>
-          <Stats />
+        <Route path="/add" exact>
+          <AddMonth />
         </Route>
         <Redirect to="/" />
       </Switch>
