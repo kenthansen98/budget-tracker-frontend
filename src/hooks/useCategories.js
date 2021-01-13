@@ -7,9 +7,8 @@ const useCategories = () => {
     const fetchCategories = async () => {
         setLoading(true);
         
-        const response = await fetch('http://eb58feb594d4.ngrok.io/api/categories');
+        const response = await fetch('http://7e0ef4f8b30e.ngrok.io/api/categories');
         const json = await response.json();
-        //console.log(json.categories);
 
         setLoading(false);
         setCategories(json);

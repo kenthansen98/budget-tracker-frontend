@@ -9,17 +9,17 @@ const styles = StyleSheet.create({
         backgroundColor: theme.appBarColor.backgroundColor,
         height: 75,
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        padding: 30,
+        justifyContent: 'space-around',
+        paddingTop: 25
     }
 });
 
 const AppBar = () => {
     return (
         <View style={styles.container}>
-            <AppBarTab title="My Budget" route="/mybudget" />
-            <AppBarTab title="Home" route="/" />
-            <AppBarTab title="Add Month" route="/add" />
+            <AppBarTab title="My Budget" route="/mybudget" icon="piechart" />
+            <AppBarTab title="Home" route="/" icon="home" />
+            <AppBarTab title="Add Month" route="/add" icon="pluscircle" />
         </View>
     );
 };

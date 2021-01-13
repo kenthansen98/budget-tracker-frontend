@@ -27,7 +27,7 @@ const theme = {
     bold: '700',
   },
   appBarColor: {
-    backgroundColor: '#24292e',
+    backgroundColor: '#6acc90',
   }
 };
 
