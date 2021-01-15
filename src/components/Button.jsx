@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
     },
 });
 
-const Button = ({ text }) => {
+const Button = ({ text, onSubmit }) => {
     return (
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback onPress={onSubmit}>
             <View style={styles.button}>
                 <Text color='tab' style={styles.buttonText}>{text}</Text>
             </View>

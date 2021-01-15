@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const useCategories = () => {
     const [categories, setCategories] = useState();
@@ -7,8 +8,8 @@ const useCategories = () => {
     const fetchCategories = async () => {
         setLoading(true);
         
-        const response = await fetch('http://7e0ef4f8b30e.ngrok.io/api/categories');
-        const json = await response.json();
+        const response = await axios.get('http://1b3d6df3e88c.ngrok.io/api/categories');
+        const json = response.data;
 
         setLoading(false);
         setCategories(json);

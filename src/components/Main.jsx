@@ -7,6 +7,7 @@ import Home from './Home';
 import AppBar from './AppBar';
 import Budget from './Budget';
 import AddMonth from './AddMonth';
+import AddCategory from './AddCategory';
 
 const styles = StyleSheet.create({
   container: {
@@ -26,6 +27,9 @@ const Main = () => {
         </Route>
         <Route path="/mybudget" exact>
           <Budget />
+        </Route>
+        <Route path="/addcategory" exact>
+          <AddCategory />
         </Route>
         <Route path="/add" exact>
           <AddMonth />
