@@ -23,10 +23,8 @@ const styles = StyleSheet.create({
 const CategoryItem = ({ item }) => {
     return (
         <View style={styles.category}>
-            <View style={styles.info}>
-                <Text fontSize='subheading' fontWeight='bold'>{item.name}</Text>
-                <Text style={styles.amount}>{item.amount}</Text>
-            </View>
+            <Text fontSize='subheading' fontWeight='bold'>{item.name}</Text>
+            <Text style={styles.amount}>{item.amount}</Text>
         </View>
     );
 };

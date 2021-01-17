@@ -5,10 +5,7 @@ import useCategories from '../hooks/useCategories';
 import CategoryItem from './CategoryItem';
 import BudgetHeader from './BudgetHeader';
 
-const styles = StyleSheet.create({
-    title: {
-        
-    },  
+const styles = StyleSheet.create({ 
     container: {
         flex: 1, 
         alignItems: 'center',

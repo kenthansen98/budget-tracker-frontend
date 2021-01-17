@@ -58,9 +58,7 @@ const AddCategoryForm = ({ onSubmit, setFieldValue }) => {
                     {label: 'Income', value: 'Income'},
                 ]}
                 >
-                {/* <TextInput value={choice} style={styles.field} /> */}
-                <FormikTextInput name="type" placeholder={choice} style={styles.field} value={choice} />
-                {/* <Text style={styles.field}>{choice}</Text> */}
+                <FormikTextInput name="type" placeholder="Select..." style={styles.field} value={choice} />
             </RNPickerSelect>
             <Button text="Add Category" onSubmit={onSubmit} />
         </View>
